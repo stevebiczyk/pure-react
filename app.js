@@ -13,4 +13,7 @@ const App = () => {
     React.createElement(Person, { name: "Alex", age: 7 }, null),
   ]);
 };
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+
+const container = document.getElementById("root");
+const root = React.createRoot(container);
+root.render(React.createElement(App));
